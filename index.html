@@ -1,1 +1,151 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michał Puścian - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #faf6f2;
+            line-height: 1.6;
+            color: #3a3a3a;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0 40px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid rgba(0,0,0,0.08);
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 30px;
+            border: 4px solid #F8D5B7;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2d2d2d;
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        h2 {
+            color: #2d2d2d;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #F8D5B7;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        .experience-item {
+            margin-bottom: 32px;
+            padding: 20px;
+            background: #fffaf5;
+            border-left: 3px solid #F8D5B7;
+            border-radius: 4px;
+            transition: transform 0.2s ease;
+        }
+
+        .experience-item:hover {
+            transform: translateX(8px);
+        }
+
+        .experience-item h3 {
+            color: #2d2d2d;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .experience-item p {
+            color: #666;
+            margin-bottom: 12px;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .experience-item p:first-of-type {
+            color: #c97e4a;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 15px;
+            }
+            
+            header {
+                padding: 40px 0 30px;
+            }
+            
+            .profile-img {
+                width: 160px;
+                height: 160px;
+            }
+
+            .section {
+                padding: 30px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="000185160003.jpg" alt="Michał Puścian" class="profile-img">
+            <h1>Michał Puścian</h1>
+        </header>
+
+        <section class="section">
+            <h2>About Me</h2>
+            <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+                Data Science Master's student at Warsaw University of Technology, passionate about statistics, programming and ML.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Actuarial Specialist</h3>
+                <p>LUX MED • Jul 2023 – Present</p>
+                <p>
+                    • Creating machine learning models used in pricing.<br>
+                    • Pricing analysis in Python<br>
+                    • Technologies: Linux, Polars (PySpark-like single node library), Pandas, Plotting libraries, MS SQL, Scikit-learn, CatBoost, XGBoost
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
